@@ -1,0 +1,11 @@
+9/9/21 - Thursday
+	20:37 - 21:15
+	Performed first time setup for project. 
+
+9/10/21 - Friday
+	19:50 - 20:35
+	Performed first time setup for project. 
+	22:21 - 23:12
+	Created activity pages main, setUserName, setUserPhone, setUserEmail, and setUserBio. 
+
+
