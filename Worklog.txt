@@ -8,4 +8,10 @@
 	22:21 - 23:12
 	Created activity pages main, setUserName, setUserPhone, setUserEmail, and setUserBio. 
 
+9/11/21 - Saturday
+	16:00 - 17:33 
+	Linked activities together. 
+	Added app icon. Src: https://unsplash.com/photos/zqhe4qjVTJI
+	
+	Started working on functionalities of name, phone, email, bio. 
 

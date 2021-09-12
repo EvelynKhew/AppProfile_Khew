@@ -13,25 +13,27 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="122dp"
         android:text="What is your phone number?"
+        android:hint="Phone Number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/setUserPhoneNumber"
+        android:layout_width="242dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="65dp"
         android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="165dp" />
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setUserPhoneTitle" />
 
     <Button
         android:id="@+id/updatePhoneButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="252dp"
         android:text="update"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/setUserPhoneNumber" />
 </androidx.constraintlayout.widget.ConstraintLayout>

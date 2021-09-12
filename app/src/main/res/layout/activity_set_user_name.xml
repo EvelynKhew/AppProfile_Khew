@@ -15,7 +15,7 @@
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/setUserFirstname"
         app:layout_constraintTop_toBottomOf="@+id/lastNameHint"
-        android:autofillHints="Last name"
+        android:hint="Last name"
         />
 
     <TextView
@@ -35,6 +35,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="120dp"
         android:text="What is your name?"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,7 +48,7 @@
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstNameHint"
-        android:autofillHints="First name"
+        android:hint="First name"
         />
 
     <TextView
@@ -65,7 +66,7 @@
         android:layout_width="100dp"
         android:layout_height="48dp"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="252dp"
         android:text="Update"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/setUserLastName" />

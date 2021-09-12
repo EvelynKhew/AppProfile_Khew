@@ -6,4 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".setUserBio">
 
+    <TextView
+        android:id="@+id/setUserBioTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="122dp"
+        android:hint="Phone Number"
+        android:text="What type of Passenger are you?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/updateUserBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="287dp"
+        android:text="update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setUserBio" />
+
+    <EditText
+        android:id="@+id/setUserBio"
+        android:layout_width="251dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="65dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setUserBioTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
