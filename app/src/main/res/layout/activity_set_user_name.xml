@@ -12,8 +12,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:ems="10"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/setUserFirstname"
+        app:layout_constraintStart_toEndOf="@+id/setUserFirstName"
         app:layout_constraintTop_toBottomOf="@+id/lastNameHint"
         android:hint="Last name"
         />
@@ -35,28 +36,30 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="120dp"
         android:text="What is your name?"
+        android:textSize="20dp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/setUserFirstname"
+        android:id="@+id/setUserFirstName"
         android:layout_width="120dp"
         android:layout_height="48dp"
-        android:layout_marginStart="53dp"
+        android:layout_marginStart="52dp"
         android:ems="10"
+        android:hint="First name"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstNameHint"
-        android:hint="First name"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/firstNameHint" />
 
     <TextView
         android:id="@+id/firstNameHint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
         android:text="First Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/setUserNameTItle" />

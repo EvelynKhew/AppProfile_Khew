@@ -1,7 +1,3 @@
-9/9/21 - Thursday
-	20:37 - 21:15
-	Performed first time setup for project. 
-
 9/10/21 - Friday
 	19:50 - 20:35
 	Performed first time setup for project. 
@@ -12,6 +8,24 @@
 	16:00 - 17:33 
 	Linked activities together. 
 	Added app icon. Src: https://unsplash.com/photos/zqhe4qjVTJI
-	
+
+9/12/21 - Sunday
+	14:24 - 16:00
 	Started working on functionalities of name, phone, email, bio. 
+	Name values were not working properly. Need to do further research. 
+
+	17:20 - 18:00
+	Researched on using Shared Preferences in Android Studio, and finally got name working properly. 
+
+	Had Computer Issues, needed to fix. 
+
+	18:40 - 19:57
+	Issues were resolved, continued project. 
+	Core Project completed. Name, Phone, Email and Bio fields completely implemented and tested. 
+
+
+	20:07 - 20:40
+	Completed final touchups on activity XMLs and documentations. 
+
+
 

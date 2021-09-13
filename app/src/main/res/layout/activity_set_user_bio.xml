@@ -10,10 +10,12 @@
         android:id="@+id/setUserBioTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="122dp"
-        android:hint="Phone Number"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="120dp"
         android:text="What type of Passenger are you?"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,10 +31,11 @@
 
     <EditText
         android:id="@+id/setUserBio"
-        android:layout_width="251dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="65dp"
+        android:layout_width="293dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="56dp"
         android:ems="10"
+        android:hint="Enter your bio here"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/setUserBioTitle" />
