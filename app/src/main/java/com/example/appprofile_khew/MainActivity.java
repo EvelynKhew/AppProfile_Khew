@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Handling user profile pic
         uPic = (ImageView) findViewById(R.id.userProfilePic);
-        //TODO
 
         //Handling username TextView
         uName = (TextView) findViewById(R.id.userName);
@@ -72,6 +71,11 @@ public class MainActivity extends AppCompatActivity {
             uBio.setText(bioPrefs.getString("user_bio", ""));
         }
 
+        uPic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openSetUserImage(); }
+        });
+
         //when name field is clicked
         uName.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,6 +107,12 @@ public class MainActivity extends AppCompatActivity {
                 openSetUserBio();
             }
         });
+    }
+
+    //opens when the photo ImageView is clicked
+    public void openSetUserImage(){
+        Intent intent = new Intent(this, changeProfileImage.class);
+        startActivity(intent);
     }
 
     //opens when the name TextView is clicked
