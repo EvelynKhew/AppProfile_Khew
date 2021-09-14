@@ -24,7 +24,9 @@ public class setUserPhone extends AppCompatActivity {
     private EditText inputNumber;
     private Button updateButton;
 
-
+    /**
+     * Automatically called when activity opens.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +42,11 @@ public class setUserPhone extends AppCompatActivity {
         });
     }
 
+    /**
+     * Called when the update button is clicked.
+     * Sends an error if the phone number field is empty.
+     * Navigates back to main page otherwise.
+     */
     private void phoneUpdate(){
         phoneNumber = inputNumber.getText().toString().trim();
         if(!checkPhoneNumber()){
@@ -50,6 +57,13 @@ public class setUserPhone extends AppCompatActivity {
         startActivity(returnToMain);
     }
 
+    /**
+     * Called by phoneUpdate().
+     * Checks if phone field are empty, have 10 digits or are not numerical.
+     * Parses through user input phone number and formats them in the form of (xxx) xxx-xxxx.
+     * @return true if phone field are not empty, are 10 digits long and are numerical.
+     * @return false otherwise.
+     */
     private boolean checkPhoneNumber(){
         if(phoneNumber.isEmpty()){
             Toast.makeText(getApplicationContext(), "Please enter your phone number.", Toast.LENGTH_SHORT).show();
@@ -83,6 +97,9 @@ public class setUserPhone extends AppCompatActivity {
         }
     }
 
+    /**
+     * Stores User input of phone number using SharedPreferences.
+     */
     private void saveNumber(){
         SharedPreferences userPhone = getSharedPreferences("shared_phone", MODE_PRIVATE);
         SharedPreferences.Editor editor = userPhone.edit();

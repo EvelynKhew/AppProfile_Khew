@@ -20,6 +20,9 @@ public class setUserBio extends AppCompatActivity {
     private EditText inputBio;
     private Button updateButton;
 
+    /**
+     * Automatically called when activity opens.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,11 @@ public class setUserBio extends AppCompatActivity {
         });
     }
 
+    /**
+     * Called when the update button is clicked.
+     * Sends an error if the Bio field is empty.
+     * Navigates back to main page otherwise.
+     */
     private void bioUpdate(){
         uBio = inputBio.getText().toString();
         if(uBio.isEmpty()){
@@ -45,6 +53,9 @@ public class setUserBio extends AppCompatActivity {
         startActivity(returnToMain);
     }
 
+    /**
+     * Stores User input of bio using SharedPreferences.
+     */
     private void saveBio(){
         SharedPreferences userBio = getSharedPreferences("shared_bio", MODE_PRIVATE);
         SharedPreferences.Editor editor = userBio.edit();

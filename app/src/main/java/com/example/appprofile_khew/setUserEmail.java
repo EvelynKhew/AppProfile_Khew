@@ -24,6 +24,9 @@ public class setUserEmail extends AppCompatActivity {
     private EditText inputEmail;
     private Button updateButton;
 
+    /**
+     * Automatically called when activity opens.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +42,11 @@ public class setUserEmail extends AppCompatActivity {
         });
     }
 
+    /**
+     * Called when the update button is clicked.
+     * Sends an error if the email field does not pass emailRegEx().
+     * Navigates back to main page otherwise.
+     */
     public void emailUpdate(){
         email = inputEmail.getText().toString().trim();
         if(!emailRegEx(email)){ return; } //stop running if email is in wrong format
@@ -48,6 +56,13 @@ public class setUserEmail extends AppCompatActivity {
         startActivity(returnToMain);
     }
 
+    /**
+     * Called by emailUpdate().
+     * Checks if email field is empty or does not conform to email RegEx.
+     * @param userEmail
+     * @return true if email field is not empty or conforms to email RegEx.
+     * @return false otherwise.
+     */
     private boolean emailRegEx(String userEmail){
         if(userEmail.isEmpty()){
             inputEmail.setError("Email textbox is empty. Try again.");
@@ -63,6 +78,9 @@ public class setUserEmail extends AppCompatActivity {
         }
     }
 
+    /**
+     * Stores User input of email using SharedPreferences.
+     */
     public void saveEmail(){
         SharedPreferences userEmail = getSharedPreferences("shared_email", MODE_PRIVATE);
         SharedPreferences.Editor editor = userEmail.edit();

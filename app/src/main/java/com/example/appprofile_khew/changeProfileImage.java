@@ -13,6 +13,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+/**
+ * changeProfileImage currently does nothing.
+ * Upload Photo button does nothing.
+ * Update button just sends you back to the main screen.
+ */
 public class changeProfileImage extends AppCompatActivity {
 
     private static final int IMAGE_PICK_CODE = 1000;

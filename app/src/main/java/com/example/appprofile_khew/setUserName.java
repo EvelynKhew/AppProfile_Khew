@@ -28,6 +28,9 @@ public class setUserName extends AppCompatActivity {
     private EditText lEditText;
     private Button updateButton;
 
+    /**
+     * Automatically called when activity opens.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +47,11 @@ public class setUserName extends AppCompatActivity {
         });
     }
 
+    /**
+     * Called when the update button is clicked.
+     * Sends an error if the name fields do not pass name checker.
+     * Navigates back to main page otherwise.
+     */
     public void nameUpdate(){
         fName = fEditText.getText().toString().trim();
         lName = lEditText.getText().toString().trim();
@@ -57,6 +65,9 @@ public class setUserName extends AppCompatActivity {
         startActivity(returnToMain);
     }
 
+    /**
+     * Stores User input of names using SharedPreferences.
+     */
     public void saveName(){
         SharedPreferences usernames = getSharedPreferences("shared_name", MODE_PRIVATE);
         SharedPreferences.Editor editor = usernames.edit();
@@ -64,6 +75,12 @@ public class setUserName extends AppCompatActivity {
         editor.commit();
     }
 
+    /**
+     * Called by nameUpdate().
+     * Checks if name fields are empty or are not alphabetical.
+     * @return true if name fields are not empty and are alphabetical.
+     * @return false otherwise.
+     */
     public boolean nameChecker(){
         if(fName.isEmpty() && lName.isEmpty()){
             Toast.makeText(getApplicationContext(), "Name fields are empty.", Toast.LENGTH_SHORT).show();

@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
 //    setUserEmail emailObj = new setUserEmail();
 //    setUserBio bioObj = new setUserBio();
 
+    /**
+     * Automatically called when Activity starts.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
