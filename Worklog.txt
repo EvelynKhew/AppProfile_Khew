@@ -42,7 +42,7 @@
 	Added some tests to make sure everything runs smoothly. 
 	Image doesn't stay forever; it will revert back to original image once a different field is updated. 
 
-	20:10 - 	
+	20:10 - 20:37	
 	Documenting code. 
 	Found an issue where the user uploaded image doesn't stay long term. It disappears as soon as the user visits a different page. 
 	
