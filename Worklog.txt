@@ -28,7 +28,7 @@
 	Completed final touchups on activity XMLs and documentations. 
 
 9/13/21 - Monday
-	17:24 - 09:02
+	17:24 - 21:02
 	Figuring out how to work on Profile Photo changing. 
 	res/drawable/sample_image.jpg: https://unsplash.com/photos/AGy0SxTzqr8
 	No luck, taking a small break. 
