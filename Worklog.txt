@@ -33,3 +33,16 @@
 	res/drawable/sample_image.jpg: https://unsplash.com/photos/AGy0SxTzqr8
 	No luck, taking a small break. 
 
+9/14/21 - Tuesday
+	17:40 - 20:05
+	Back to the grind, trying out getting a photo from the gallery first. 
+	Figured out how to upload photo from gallery and have it displayed. Now need to learn how to pass between activities. 
+	Image now gets sent to the main page from activity_change_profile_image.xml, but it doesn't show up. 
+	It shows up now! (20:00)
+	Added some tests to make sure everything runs smoothly. 
+	Image doesn't stay forever; it will revert back to original image once a different field is updated. 
+
+	20:10 - 	
+	Documenting code. 
+	Found an issue where the user uploaded image doesn't stay long term. It disappears as soon as the user visits a different page. 
+	

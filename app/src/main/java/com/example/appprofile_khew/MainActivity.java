@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Main Activity handles activity_main.xml
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView uBio;
 
     //Was wanting to use OOP to retrieve information between classes, but it didn't work.
-    //Am using SharedPreferences instead.
+    //Switched to using SharedPreferences instead.
 //    setUserName nameObj = new setUserName();
 //    setUserPhone phoneObj = new setUserPhone();
 //    setUserEmail emailObj = new setUserEmail();
@@ -42,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
         //Handling user profile pic
         uPic = (ImageView) findViewById(R.id.userProfilePic);
+
+            Bundle bundle = getIntent().getExtras();
+            if(bundle!= null){
+                Intent imgIntent = getIntent();
+                String imgPath = imgIntent.getStringExtra("imgID");
+                Uri imgUri = Uri.parse(imgPath);
+                uPic.setImageURI(imgUri);
+            }
 
         //Handling username TextView
         uName = (TextView) findViewById(R.id.userName);
